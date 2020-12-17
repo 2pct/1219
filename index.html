@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum clone project - 2%</title>
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/weather-icons.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8845aaed19.js" crossorigin="anonymous"></script></head>
+<body>
+    <span class="js-weather weather">
+    </span>
+    
+    <section class="presentation">
+        <section class="main">
+            <h1 class="js-clock">00:00</h1>
+
+            <form class="js-form form">
+                <input autocomplete="off" style="font-size: 2.5em;" type="text" placeholder="What is your name?">
+            </form>
+
+            <span class="js-greetings greetings"></span>
+            <span class="js-username username" contenteditable="true"></span>
+
+
+            <h2 id="askTodos">What are you planning to do today?</h2>
+        </section>
+        <form class="js-todoForm todoForm">
+            <input autocomplete="off" id="todoInput" type="text">            
+            <span id="hideToDoBtn" onclick="hideToDo()">+</span>
+
+        </form>
+        <ul style="list-style: none;" class="js-todoList"></ul>
+        <p id="photoCredit" style="cursor: pointer" onclick="newTab()" rel="noreferrer noopener" target="_blank"></p>
+        
+        <i class="lock">
+            <svg id="unlocked" onclick="lockBg()" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="hide" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M9.655 8H2.333c-.264 0-.398.068-.471.121a.73.73 0 0 0-.224.296 1.626 1.626 0 0 0-.138.59V14c0 .342.076.531.14.635.064.106.151.18.256.237a1.122 1.122 0 0 0 .436.127l.013.001h7.322c.264 0 .398-.068.471-.121a.73.73 0 0 0 .224-.296 1.627 1.627 0 0 0 .138-.59V9c0-.342-.076-.531-.14-.635a.658.658 0 0 0-.255-.237A1.122 1.122 0 0 0 9.655 8zm.012-1H2.333C.5 7 .5 9 .5 9v5c0 2 1.833 2 1.833 2h7.334c1.833 0 1.833-2 1.833-2V9c0-2-1.833-2-1.833-2zM8.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
+            </svg>    
+            <svg id="locked" onclick="unlockBg()" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="hide" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M11.5 8h-7a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1zm-7-1a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-7zm0-3a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
+            </svg> 
+        </i>
+
+    </section>
+    <script src="JS/clock.js"></script>
+    <script src="JS/bg.js"></script>
+    <script src="JS/greetings.js"></script>
+    <script src="JS/todo.js"></script>
+    <script src="JS/hover.js"></script>
+    <script src="JS/weather.js"></script>
+</body>
+</html>
